@@ -61,5 +61,18 @@ bookStore.books.forEach((book) => {
     const bookAuthor = document.createElement("p");
     // Create an <img> element for the book cover image
     const bookImage = document.createElement("img");
+
+    // Update the title using the current book's title property
+    bookTitle.textContent = book.title;
+    // Set the author text using the current book's author property
+    bookAuthor.textContent = book.author;
+    // Update the image source using the current book's imageUrl property
+    bookImage.src = book.imageUrl;
+
+    // Add the title, author, and image elements into the <li> container
+    bookContainer.appendChild(bookTitle);
+    bookContainer.appendChild(bookAuthor);
+    bookContainer.appendChild(bookImage);
+    
 }
-)
+);
