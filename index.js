@@ -44,4 +44,9 @@ const bookStore = {
 }
 
 // Write your code here!
+// Select the html element with the id "header"
+const bookStoreTitle = document.querySelector("#header");
 
+// Update text insider the header to bookstore's name
+// Value coming from the "name" property of the bookStore object itself
+bookStoreTitle.textContent = bookStore.name;
