@@ -50,3 +50,16 @@ const bookStoreTitle = document.querySelector("#header");
 // Update text insider the header to bookstore's name
 // Value coming from the "name" property of the bookStore object itself
 bookStoreTitle.textContent = bookStore.name;
+
+// Loop through every book in the "books" array of the bookStore object
+bookStore.books.forEach((book) => {
+    // Create a list item(li) to hold one book
+    const bookContainer = document.createElement("li");
+    // Create an <h3> element for the book title
+    const bookTitle = document.createElement("h3");
+    // Create a <p> element for the book author
+    const bookAuthor = document.createElement("p");
+    // Create an <img> element for the book cover image
+    const bookImage = document.createElement("img");
+}
+)
